@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cap au Large — Location de Bateaux à Boulogne-sur-Mer</title>
+  <meta name="description" content="Location de bateaux sur la Côte d'Opale. 3 modèles disponibles. Réservation en ligne, paiement sur place.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#">
+      <span class="nav-brand-icon">⚓</span>
+      Cap au Large
+    </a>
+    <div class="nav-links">
+      <a href="#models">Bateaux</a>
+      <a href="#availability">Disponibilités</a>
+      <a href="#pricing">Tarifs</a>
+      <a href="#location">Accès</a>
+      <a href="#models" class="nav-cta btn">Réserver</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mobMenu">
+  <a href="#models">Bateaux</a>
+  <a href="#availability">Disponibilités</a>
+  <a href="#pricing">Tarifs</a>
+  <a href="#location">Accès</a>
+  <a href="#models" class="btn">Réserver</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">Boulogne-sur-Mer · Côte d'Opale · Avril – Octobre</p>
+    <h1 class="hero-title">Navigation<br><em>Libre</em></h1>
+    <p class="hero-sub">Une flotte soigneusement sélectionnée pour explorer la Côte d'Opale. Luxe, performance et liberté en mer.</p>
+    <a href="#models" class="btn btn--hero">Choisir un bateau</a>
+  </div>
+
+  <div class="hero-bottom">
+    <div class="hero-card hero-card--desc">
+      <img class="hero-card-img" src="bateau-2.png" alt="Bateau en mer">
+      <p class="hero-card-text">Nous accompagnons nos clients dans la location de bateaux haut de gamme avec sérénité. Du choix de l'embarcation jusqu'à votre retour au port, nous assurons une expérience fluide et mémorable.</p>
+      <a href="#models" class="hero-card-arrow">→</a>
+    </div>
+    <div class="hero-card hero-card--stats">
+      <div class="hero-stats-top">
+        <div class="hero-avatars">
+          <span class="hero-avatar">😊</span>
+          <span class="hero-avatar">⭐</span>
+          <span class="hero-avatar">🌊</span>
+        </div>
+        <div>
+          <div class="stat-num">15k+</div>
+          <div class="stat-lbl">Avis positifs</div>
+        </div>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hero-stat-block">
+          <div class="stat-num">10k</div>
+          <div class="stat-lbl">Clients satisfaits</div>
+        </div>
+        <div class="hero-stat-sep"></div>
+        <div class="hero-stat-block">
+          <div class="stat-num">12+</div>
+          <div class="stat-lbl">Ans d'expérience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MODELS — Tesla style ══════════ -->
+<section class="models" id="models">
+
+  <div class="mt-tabs" role="tablist">
+    <button class="mt-tab active" data-idx="0" role="tab">Cap Serein</button>
+    <button class="mt-tab"        data-idx="1" role="tab">Horizon Sport</button>
+    <button class="mt-tab"        data-idx="2" role="tab">Prestige 400</button>
+  </div>
+
+  <div class="mt-stage">
+
+    <!-- Slide 0 — Cap Serein -->
+    <div class="mt-slide active" data-idx="0">
+      <div class="mt-img">
+        <img src="bateau-1.png" alt="Cap Serein">
+      </div>
+      <div class="mt-info">
+        <div class="mt-name-block">
+          <span class="mt-brand">Cap au Large</span>
+          <span class="mt-model">Cap Serein</span>
+          <span class="mt-level">Découverte · Convivial</span>
+        </div>
+        <div class="mt-right">
+          <div class="mt-specs">
+            <div class="mt-spec"><span class="mt-sv">150 <em>ch</em></span><span class="mt-sl">Puissance</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">35 <em>nœuds</em></span><span class="mt-sl">Vitesse max</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">6 <em>pers.</em></span><span class="mt-sl">Capacité</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">7,5 <em>m</em></span><span class="mt-sl">Longueur</span></div>
+          </div>
+          <button class="btn btn-reserve" data-model="0">Réserver — 90 € <span class="btn-per">/h</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 1 — Horizon Sport -->
+    <div class="mt-slide" data-idx="1">
+      <div class="mt-img">
+        <img src="bateau-2.png" alt="Horizon Sport">
+      </div>
+      <div class="mt-info">
+        <div class="mt-name-block">
+          <span class="mt-brand">Cap au Large</span>
+          <span class="mt-model">Horizon Sport</span>
+          <span class="mt-level">Sport · Intermédiaire</span>
+        </div>
+        <div class="mt-right">
+          <div class="mt-specs">
+            <div class="mt-spec"><span class="mt-sv">250 <em>ch</em></span><span class="mt-sl">Puissance</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">50 <em>nœuds</em></span><span class="mt-sl">Vitesse max</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">8 <em>pers.</em></span><span class="mt-sl">Capacité</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">9,2 <em>m</em></span><span class="mt-sl">Longueur</span></div>
+          </div>
+          <button class="btn btn-reserve" data-model="1">Réserver — 120 € <span class="btn-per">/h</span></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Prestige 400 -->
+    <div class="mt-slide" data-idx="2">
+      <div class="mt-img">
+        <img src="bateau-3.png" alt="Prestige 400">
+      </div>
+      <div class="mt-info">
+        <div class="mt-name-block">
+          <span class="mt-brand">Cap au Large</span>
+          <span class="mt-model">Prestige 400</span>
+          <span class="mt-level">Luxe · Expert</span>
+        </div>
+        <div class="mt-right">
+          <div class="mt-specs">
+            <div class="mt-spec"><span class="mt-sv">400 <em>ch</em></span><span class="mt-sl">Puissance</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">65 <em>nœuds</em></span><span class="mt-sl">Vitesse max</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">12 <em>pers.</em></span><span class="mt-sl">Capacité</span></div>
+            <div class="mt-sep"></div>
+            <div class="mt-spec"><span class="mt-sv">12 <em>m</em></span><span class="mt-sl">Longueur</span></div>
+          </div>
+          <button class="btn btn-reserve" data-model="2">Réserver — 180 € <span class="btn-per">/h</span></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING MODAL -->
+<div class="overlay" id="overlay" aria-hidden="true">
+  <div class="modal" id="modal">
+    <button class="modal-x" id="modalClose" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="progress" id="progress">
+      <span class="ps" id="ps1">Date</span><span class="pl"></span>
+      <span class="ps" id="ps2">Heure</span><span class="pl"></span>
+      <span class="ps" id="ps3">Infos</span>
+    </div>
+    <div class="step active" id="step1">
+      <p class="step-model" id="modalModelName">Cap Serein</p>
+      <h3>Choisissez une date</h3>
+      <p class="step-hint">Les jours grisés sont déjà réservés.</p>
+      <div class="cal-top">
+        <button class="cal-btn" id="calPrev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <span class="cal-title" id="calTitle"></span>
+        <button class="cal-btn" id="calNext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <button class="btn btn-full" id="toStep2" disabled>Choisir un horaire →</button>
+    </div>
+    <div class="step" id="step2">
+      <button class="back" id="back1">← Retour</button>
+      <h3>Choisissez un créneau</h3>
+      <p class="step-hint" id="step2Date">—</p>
+      <div class="time-grid">
+        <button class="tslot" data-t="08:00">08h00<em>Matin</em></button>
+        <button class="tslot" data-t="10:00">10h00<em>Matin</em></button>
+        <button class="tslot" data-t="13:00">13h00<em>Après-midi</em></button>
+        <button class="tslot" data-t="15:30">15h30<em>Après-midi</em></button>
+      </div>
+      <button class="btn btn-full" id="toStep3" disabled>Continuer →</button>
+    </div>
+    <div class="step" id="step3">
+      <button class="back" id="back2">← Retour</button>
+      <h3>Vos coordonnées</h3>
+      <div class="recap" id="recap"></div>
+      <div class="fields">
+        <div class="field-row">
+          <div class="field"><label>Prénom & Nom</label><input id="fName" type="text" placeholder="Jean Dupont"></div>
+          <div class="field"><label>Téléphone</label><input id="fPhone" type="tel" placeholder="+33 6 00 00 00 00"></div>
+        </div>
+        <div class="field"><label>Email</label><input id="fEmail" type="email" placeholder="jean@email.com"></div>
+        <div class="field"><label>Message <span class="opt">optionnel</span></label><textarea id="fMsg" rows="3" placeholder="Nombre de personnes, questions…"></textarea></div>
+        <button class="btn btn-full" id="submitBtn">Envoyer ma demande</button>
+        <p class="fine">Aucun paiement maintenant. Confirmation sous 2h par email.</p>
+      </div>
+    </div>
+    <div class="step step-done" id="step4">
+      <div class="check">✓</div>
+      <h3>Demande envoyée !</h3>
+      <p class="step-hint">Nous vous confirmons sous 2h par email.</p>
+      <button class="btn" id="doneBtn">Parfait</button>
+    </div>
+  </div>
+</div>
+
+<!-- AVAILABILITY -->
+<section class="avail" id="availability">
+  <div class="container">
+    <p class="eyebrow">Disponibilités</p>
+    <h2>Quand voulez-vous sortir ?</h2>
+    <p class="sec-sub">Les jours barrés sont complets. La saison s'étend d'avril à octobre, 8h – 20h.</p>
+    <div class="avail-legend">
+      <span class="al-item"><i class="al-dot al-ok"></i>Disponible</span>
+      <span class="al-item"><i class="al-dot al-full"></i>Complet</span>
+      <span class="al-item"><i class="al-dot al-today"></i>Aujourd'hui</span>
+    </div>
+    <div class="avail-card">
+      <div class="cal-top">
+        <button class="cal-btn" id="availPrev"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <span class="cal-title" id="availTitle"></span>
+        <button class="cal-btn" id="availNext"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+      <div class="cal-grid" id="availGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUDES -->
+<section class="includes">
+  <div class="container">
+    <p class="eyebrow">Inclus dans chaque location</p>
+    <h2>Tout est prévu.</h2>
+    <div class="inc-grid">
+
+      <div class="inc-card">
+        <div class="inc-visual inc-visual--blue">
+          <span class="inc-emoji">🦺</span>
+        </div>
+        <div class="inc-text">
+          <p class="inc-name">Gilets de sauvetage</p>
+          <p class="inc-desc">Homologués CE, toutes tailles</p>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-visual inc-visual--teal">
+          <span class="inc-emoji">⚓</span>
+        </div>
+        <div class="inc-text">
+          <p class="inc-name">Briefing capitaine</p>
+          <p class="inc-desc">15 min avant chaque sortie</p>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-visual inc-visual--orange">
+          <span class="inc-emoji">🗺️</span>
+        </div>
+        <div class="inc-text">
+          <p class="inc-name">Carte maritime</p>
+          <p class="inc-desc">Zones autorisées & interdites</p>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-visual inc-visual--green">
+          <span class="inc-emoji">🎒</span>
+        </div>
+        <div class="inc-text">
+          <p class="inc-name">Sac étanche offert</p>
+          <p class="inc-desc">Vos effets en sécurité</p>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-visual inc-visual--purple">
+          <span class="inc-emoji">🛡️</span>
+        </div>
+        <div class="inc-text">
+          <p class="inc-name">Assurance RC incluse</p>
+          <p class="inc-desc">Responsabilité civile couverte</p>
+        </div>
+      </div>
+
+      <div class="inc-card">
+        <div class="inc-visual inc-visual--red">
+          <span class="inc-emoji">📍</span>
+        </div>
+        <div class="inc-text">
+          <p class="inc-name">Points d'intérêt</p>
+          <p class="inc-desc">Sites incontournables balisés</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <p class="eyebrow">Tarifs</p>
+    <h2>Transparent,<br>sans surprise.</h2>
+    <p class="sec-sub">Carburant en sus · Caution 1 500 € · Permis bateau obligatoire</p>
+    <div class="price-table">
+      <div class="pt-row pt-head">
+        <div class="pt-c pt-c--name"></div>
+        <div class="pt-c">1 heure</div>
+        <div class="pt-c">2 heures</div>
+        <div class="pt-c pt-c--hl">Demi-journée<span>4 heures</span></div>
+        <div class="pt-c">Journée<span>8 heures</span></div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-c pt-c--name"><b>Cap Serein</b><span>Découverte</span></div>
+        <div class="pt-c">90 €</div><div class="pt-c">165 €</div><div class="pt-c pt-c--hl">310 €</div><div class="pt-c">560 €</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-c pt-c--name"><b>Horizon Sport</b><span>Sport</span></div>
+        <div class="pt-c">120 €</div><div class="pt-c">220 €</div><div class="pt-c pt-c--hl">410 €</div><div class="pt-c">750 €</div>
+      </div>
+      <div class="pt-row">
+        <div class="pt-c pt-c--name"><b>Prestige 400</b><span>Luxe</span></div>
+        <div class="pt-c">180 €</div><div class="pt-c">330 €</div><div class="pt-c pt-c--hl">620 €</div><div class="pt-c">1 100 €</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+  <div class="gblock">
+    <div class="gimg"><img src="bateau-3.png" alt="Navigation sur la Côte d'Opale"></div>
+    <div class="gtxt">
+      <p class="eyebrow">L'expérience</p>
+      <h2>La Côte d'Opale comme vous ne l'avez jamais vue.</h2>
+      <p>Découvrez les falaises du Cap Blanc-Nez, les bancs de sable et les ports pittoresques depuis l'eau. Un terrain de jeu sauvage et majestueux à explorer seul, en duo ou en famille.</p>
+    </div>
+  </div>
+  <div class="gblock gblock--rev">
+    <div class="gimg"><img src="bateau-2.png" alt="Sortie en mer sécurisée"></div>
+    <div class="gtxt">
+      <p class="eyebrow">La sécurité</p>
+      <h2>Un briefing complet, chaque fois.</h2>
+      <p>Avant chaque sortie, notre capitaine vous explique les règles de navigation, les zones protégées et le fonctionnement du bateau. Vous prenez le large l'esprit serein.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="container">
+    <div class="loc-grid">
+
+      <div class="loc-info">
+        <p class="eyebrow">Nous trouver</p>
+        <h2>Point de départ</h2>
+
+        <div class="loc-row">
+          <div class="loc-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <strong>Port de Boulogne-sur-Mer</strong>
+            <span>Quai Gambetta, 62200 Boulogne-sur-Mer</span>
+          </div>
+        </div>
+
+        <div class="loc-hours-block">
+          <h3>Horaires d'ouverture</h3>
+          <div class="loc-hours">
+            <div class="loc-hour-row"><span>Lundi – Vendredi</span><span class="loc-hour-val">8h00 – 19h00</span></div>
+            <div class="loc-hour-row"><span>Samedi – Dimanche</span><span class="loc-hour-val">7h30 – 20h00</span></div>
+          </div>
+          <p class="loc-season">Ouvert d'avril à octobre uniquement</p>
+        </div>
+
+        <div class="loc-contact-block">
+          <a href="tel:+33320000000" class="loc-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.08 6.08l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +33 (0)3 XX XX XX XX
+          </a>
+          <a href="mailto:contact@cap-au-large.fr" class="loc-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            contact@cap-au-large.fr
+          </a>
+          <a href="https://maps.app.goo.gl/bE1AuWswwtcpyBLUA" target="_blank" rel="noopener" class="loc-directions">
+            Obtenir l'itinéraire →
+          </a>
+        </div>
+      </div>
+
+      <div class="loc-map">
+        <iframe
+          src="https://maps.google.com/maps?q=Port+de+Boulogne-sur-Mer,+Quai+Gambetta,+62200+Boulogne-sur-Mer&output=embed&z=15&hl=fr"
+          width="100%" height="100%" style="border:0;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Port de Boulogne-sur-Mer">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="finalcta">
+  <div class="container center">
+    <h2>Prêt à prendre<br>le large ?</h2>
+    <p>Réservez en ligne, payez sur place.</p>
+    <a href="#models" class="btn btn--inv btn--lg">Réserver maintenant</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-row">
+    <span class="footer-brand">⚓ Cap au Large</span>
+    <div class="footer-links"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Contact</a></div>
+    <span class="footer-copy">© 2026 Cap au Large · Port de Boulogne-sur-Mer</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
