@@ -358,6 +358,7 @@ h3 { font-size: 1.1rem; font-weight: 600; letter-spacing: -0.01em; }
   object-fit: cover;
   object-position: center top;
   display: block;
+  transform-origin: top center;
   transition: transform 6s ease;
 }
 .mt-slide.active .mt-img img { transform: scale(1.04); }
