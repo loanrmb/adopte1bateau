@@ -145,7 +145,7 @@ h3 { font-size: 1.1rem; font-weight: 600; letter-spacing: -0.01em; }
 
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
-  background: url('images/boat-hero-banner.jpg') center/cover no-repeat;
+  background: url('images/boat-hero-banner-2.jpg') center/cover no-repeat;
   transform: scale(1.05);
   animation: heroPan 18s ease-in-out infinite alternate;
 }
